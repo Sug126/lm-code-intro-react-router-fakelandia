@@ -1,21 +1,19 @@
-import {useState} from 'react';
-import './App.css';
-import Router from "./Router"
 import { BrowserRouter } from 'react-router-dom';
-import Home from "./Home"
+import './App.css';
+import Router from './Router';
+
 
 function App() {
   return (
-    <><div className="App">
-      <Home />
-    </div><>
+   <>
+   <div className='App'>
         <BrowserRouter>
           <Router />
 
         </BrowserRouter>
-
-      </></>
-  );
+        </div>
+   </>
+  )
 }
 
 export default App;
